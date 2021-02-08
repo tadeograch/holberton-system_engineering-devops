@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Displays "To infinity and beyond" indefinitely
+# Displays "To infinity and beyond" indefinitely and I am invincible!!! when receiving a SIGTERM signal
 while true
 do
 	echo "To infinity and beyond"
