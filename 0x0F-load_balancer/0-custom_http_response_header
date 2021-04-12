@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Configures a new Ubuntu machine
+
+sudo apt-get -y update
+sudo apt-get -y install nginx
+header="add_header X-Served-by $HOSTNAME"
+sudo sed -i "/server_name _/a $header;" /etc/nginx/sites-available/default
+sudo service nginx restart
+sudo service nginx reload
