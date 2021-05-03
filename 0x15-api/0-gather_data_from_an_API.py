@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 '''Given employee ID, returns information about his/her TODO list progress'''
+from sys import argv
 import json
 import requests
-from sys import argv
 
 url_users = "https://jsonplaceholder.typicode.com/users"
 employee_id = argv[1]
